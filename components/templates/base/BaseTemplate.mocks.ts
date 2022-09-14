@@ -1,6 +1,6 @@
-import { BaseTemplateProps } from './BaseTemplate';
+import { IBaseTemplate } from './BaseTemplate';
 
-const base: BaseTemplateProps = {
+const base: IBaseTemplate = {
   sampleTextProp: 'Hello world!',
 };
 
