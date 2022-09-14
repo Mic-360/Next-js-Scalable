@@ -1,11 +1,11 @@
-import styles from './Base.module.css'
+import styles from './Base.module.css';
 
 export interface BaseTemplateProps {
-    sampleTextProp: string;
+  sampleTextProp: string;
 }
 
 const BaseTemplate: React.FC<BaseTemplateProps> = ({ sampleTextProp }) => {
-    return <div className={styles.container}>{ sampleTextProp }</div>
+  return <div className={styles.container}>{sampleTextProp}</div>;
 };
 
 export default BaseTemplate;
