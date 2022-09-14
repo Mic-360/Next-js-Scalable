@@ -1,4 +1,4 @@
-import styles from './BaseTemplate.module.css';
+import styles from './Base.module.css';
 
 export interface IBaseTemplate {
   sampleTextProp: string;
