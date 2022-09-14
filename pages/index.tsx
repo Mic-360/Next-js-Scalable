@@ -20,11 +20,11 @@ const Home: NextPageWithLayout = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <CatCard
-          tag={''}
-          title={''}
-          body={''}
-          author={''}
-          time={''}
+          tag={'Cat Champ'}
+          title={'Catogram'}
+          body={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, delectus?'}
+          author={'Bhaumic'}
+          time={'5:35 PM'}
           {...mockCatCardProps}
         />
       </main>
