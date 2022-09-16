@@ -1,9 +1,13 @@
-import Link from "next/link";
-import styles from "./Header.module.css";
+import Link from 'next/link';
+import styles from './Header.module.css';
 
-export interface HeaderTemplateProps extends React.ComponentPropsWithoutRef<'header'> { }
+export interface HeaderTemplateProps
+  extends React.ComponentPropsWithoutRef<'header'> {}
 
-const HeaderTemplate: React.FC<HeaderTemplateProps> = ({ className, ...headerProps }) => {
+const HeaderTemplate: React.FC<HeaderTemplateProps> = ({
+  className,
+  ...headerProps
+}) => {
   return (
     <header
       {...headerProps}

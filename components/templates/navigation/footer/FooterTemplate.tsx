@@ -1,9 +1,13 @@
-import Link from "next/link";
-import styles from "./Footer.module.css";
+import Link from 'next/link';
+import styles from './Footer.module.css';
 
-export interface FooterTemplateProps extends React.ComponentPropsWithoutRef<'footer'> { }
+export interface FooterTemplateProps
+  extends React.ComponentPropsWithoutRef<'footer'> {}
 
-const HeaderTemplate: React.FC<FooterTemplateProps> = ({ className, ...headerProps }) => {
+const HeaderTemplate: React.FC<FooterTemplateProps> = ({
+  className,
+  ...headerProps
+}) => {
   return (
     <footer
       {...headerProps}
