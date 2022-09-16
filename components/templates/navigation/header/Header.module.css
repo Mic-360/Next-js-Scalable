@@ -1,0 +1,8 @@
+.component {
+  padding: auto;
+  margin: auto;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
