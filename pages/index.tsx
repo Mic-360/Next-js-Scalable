@@ -20,10 +20,12 @@ const Home: NextPageWithLayout = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <CatCard
-          tag={'Cat Champ'}
-          title={'Catogram'}
-          body={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, delectus?'}
-          author={'Bhaumic'}
+          tag={'Neko Daily'}
+          title={'Neko Mon'}
+          body={
+            'Neko Mon a cutely suspicious animal that can nekofy any individual in contact with it. Neko mon rules with an iron paw. Neko mon survival is still a mystery. Neko mon is a cat. Beware ....'
+          }
+          author={'Neko Daily Reporter'}
           time={'5:35 PM'}
           {...mockCatCardProps}
         />
