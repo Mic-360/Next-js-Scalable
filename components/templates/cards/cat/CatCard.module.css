@@ -49,6 +49,12 @@
 .card__body h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
+  color: black;
+}
+
+.card__body > p {
+  font-size: 0.875rem;
+  color: black;
 }
 
 .card__footer {
@@ -66,6 +72,11 @@
   border-radius: 50%;
 }
 
+.user__info > h5 {
+  color: black;
+  font-weight: bold;
+}
+
 .user__info > small {
-  color: #666;
+  color: black;
 }
