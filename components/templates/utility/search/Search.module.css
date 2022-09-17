@@ -4,7 +4,7 @@
 }
 
 .input {
-  width: 83.33333%;
+  width: 83.3%;
   height: 3rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -22,13 +22,13 @@
   border: 1px solid blue;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
   .input {
     width: 24rem;
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
   .input {
     width: 20rem;
   }
