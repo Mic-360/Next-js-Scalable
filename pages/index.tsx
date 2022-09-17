@@ -8,9 +8,16 @@ import { useRouter } from 'next/router';
 const Home: NextPageWithLayout = () => {
   const { locale } = useRouter();
   return (
-    <section className="flex flex-col items-center gap-y-5 mt-10 sm:mt-30">
+    <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-30">
       {/* logo */}
-      <Image src="/GLogo.png" alt="logo" width={300} height={100} />
+      <Image
+        src="/GLogo.png"
+        alt="logo"
+        width={300}
+        height={100}
+        priority
+        layout="intrinsic"
+      />
       <SearchTemplate sampleTextProp={'Search Google'} />
       {/* Toggle */}
       <p>

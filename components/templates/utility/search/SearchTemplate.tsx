@@ -10,7 +10,7 @@ const SearchTemplate: React.FC<SearchTemplateProps> = ({ sampleTextProp }) => {
 
   return (
     <form
-      className="flex flex-col items-center gap-y-5"
+      className="flex flex-col w-full items-center gap-y-5"
       onSubmit={(e) => {
         e.preventDefault();
         alert(SearchText);
@@ -23,7 +23,7 @@ const SearchTemplate: React.FC<SearchTemplateProps> = ({ sampleTextProp }) => {
         value={SearchText}
         onChange={(e) => setSearchText(e.target.value)}
       />
-      <div className="flex flex-row space-x-3">
+      <div className={styles.handler}>
         <button type="submit" className={styles.button}>
           Google Search
         </button>
