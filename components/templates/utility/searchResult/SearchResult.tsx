@@ -1,11 +1,8 @@
 import Link from 'next/link';
+import { SearchData } from '../../../../lib/database/types';
 
-export interface SearchResultProps
-  extends React.ComponentPropsWithoutRef<'div'> {
-  url: string;
-  title: string;
-  text: string;
-}
+export type SearchResultProps = SearchData &
+  React.ComponentPropsWithoutRef<'div'>;
 
 const SearchResult: React.FC<SearchResultProps> = ({
   url,
