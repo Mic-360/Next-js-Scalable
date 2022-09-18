@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import styles from './Search.module.css';
 
 export interface SearchTemplateProps {
@@ -6,6 +7,7 @@ export interface SearchTemplateProps {
 }
 
 const SearchTemplate: React.FC<SearchTemplateProps> = ({ sampleTextProp }) => {
+  const router = useRouter();
   const [SearchText, setSearchText] = useState<string>('');
 
   return (
@@ -13,7 +15,7 @@ const SearchTemplate: React.FC<SearchTemplateProps> = ({ sampleTextProp }) => {
       className="flex flex-col w-full items-center gap-y-5"
       onSubmit={(e) => {
         e.preventDefault();
-        alert(SearchText);
+        router.push(`/results?search=${SearchText}`);
       }}
     >
       <input
