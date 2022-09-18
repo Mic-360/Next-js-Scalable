@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import AuthBtnTemplate from '../../buttons/authButton/AuthBtnTemplate';
 import styles from './Header.module.css';
 
 export interface HeaderTemplateProps
@@ -28,9 +29,7 @@ const HeaderTemplate: React.FC<HeaderTemplateProps> = ({
         <Link href="/">
           <a className="hover:underline hidden sm:inline">Images</a>
         </Link>
-        <button className="px-3 py-1 rounded-sm bg-blue-600 hover:bg-blue-200">
-          Sign In
-        </button>
+        <AuthBtnTemplate />
       </div>
     </header>
   );
